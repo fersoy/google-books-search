@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import DeleteBtn from "../components/DeleteBtn";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { Input, FormBtn } from "../components/Form";
 
 class Books extends Component {
@@ -27,11 +26,6 @@ class Books extends Component {
       .catch(err => console.log(err));
   };
 
-  deleteBook = id => {
-    API.deleteBook(id)
-      .then(res => this.loadBooks())
-      .catch(err => console.log(err));
-  };
 
   handleInputChange = event => {
     const { name, value } = event.target;

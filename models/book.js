@@ -4,12 +4,10 @@ const books = require('google-books-search');
 
 const options = {
   key: "AIzaSyA_TejxGq9qzWoYy9Me5Pyx38Wr3ft48dg",
-  field: 'title',
-  offset: 0,
-  limit: 10,
-  type: 'books',
-  order: 'relevance',
-  lang: 'en'
+  title: "",
+  description: "",
+  image: "",
+  link: ""
 };
 books.search("Professional JavaScript for Web Developers", options, function (error, results, apiResponse) {
   if (!error) {
