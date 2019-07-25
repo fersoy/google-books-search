@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 const books = require('google-books-search');
 
 const options = {
-  key: "AIzaSyA_TejxGq9qzWoYy9Me5Pyx38Wr3ft48dg",
+  key: SECRET_KEY,
   title: "",
   description: "",
   image: "",
