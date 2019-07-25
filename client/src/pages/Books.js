@@ -73,7 +73,7 @@ class Books extends Component {
 
 
             <FormBtn
-              disabled={!(this.state.author && this.state.title)}
+              // disabled={!(this.state.author && this.state.title)}
               onClick={this.handleFormSubmit}
             >
               Search
