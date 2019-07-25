@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const books = require('google-books-search');
+require('dotenv').config();
 
 const options = {
   key: SECRET_KEY,
